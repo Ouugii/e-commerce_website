@@ -1,0 +1,26 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
+
+.slick-next {
+  right: 0;
+}
+
+.homeSlider {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeSlider .item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+}

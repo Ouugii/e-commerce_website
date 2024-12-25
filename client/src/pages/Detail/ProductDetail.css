@@ -1,0 +1,447 @@
+.detailsPage {
+  display: flex;
+  justify-content: center;
+}
+.deatailProdct {
+  max-width: 1600px;
+}
+.priceSelec {
+  display: flex;
+  align-items: center;
+}
+
+.rPrice {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.oPrice {
+  text-decoration: line-through;
+  font-weight: 600;
+  color: red;
+  margin-left: 10px;
+}
+
+.If_Decreption {
+  font-size: 13px;
+  font-weight: 600;
+  color: gray;
+  height: auto;
+  min-height: 200px;
+  max-height: 250px;
+  width: 500px;
+  overflow-y: scroll;
+  padding: 5px;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 10px;
+}
+.If_Decreption::-webkit-scrollbar {
+  display: none;
+}
+.iiz__img {
+  min-width: 500px;
+  width: 100% !important;
+  max-height: 500px !important;
+  object-fit: cover !important;
+  max-width: 500px !important;
+  object-fit: cover;
+}
+.productZoom {
+  width: max-content;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.ZoomSlider img {
+  width: 100%;
+  max-height: 95px;
+  object-fit: cover;
+}
+
+.ZoomSlider {
+  width: 85.9% !important;
+  height: auto;
+}
+
+.ZoomSlider .slick-arrow.slick-prev {
+  left: 1.2% !important;
+  background-color: #72fdcf;
+  border-radius: 60%;
+  z-index: 1;
+}
+.ZoomSlider .slick-arrow.slick-next {
+  right: 1.5% !important;
+  background-color: #72fdcf;
+  border-radius: 60%;
+  z-index: 1;
+}
+.ZoomSlider {
+  padding-top: 10px;
+}
+.ZoomSlider .slick-slide {
+  padding-right: 10px !important;
+  overflow: hidden;
+}
+
+.Sale_rpc {
+  border-radius: 10px;
+  background-color: #6d4117;
+  color: white;
+  padding: 3px 20px;
+  width: max-content;
+  font-weight: 600;
+}
+.productInfo {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+.AddCardSection {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  gap: 20px;
+}
+.AddCardSection .CounterSec {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #6d4117;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.AddCardSection .CounterSec input {
+  width: 70px;
+  height: 25px;
+  border: 0px;
+  outline: none;
+  margin-left: 10px;
+}
+.AddCardSection .AddCard {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  background-color: #6d4117;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.AddCardSection .AddCard:hover {
+  background-color: #54c963;
+  transform: translateY(-3px);
+}
+.AddCardSection .AddCard p {
+  margin: 0;
+}
+
+.AddCardSection .Share {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.AddCardSection .Share p {
+  margin: 0;
+}
+.AddCardSection .Share:hover {
+  background-color: #dadada;
+  transform: translateY(-3px);
+}
+.copy-message {
+  background-color: #ccc;
+  color: black;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+.Alert-message {
+  background-color: #fa8500;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+.error-message {
+  background-color: #cf0000;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+.addCart-message {
+  background-color: #14cf03;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+.part22 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.part22 {
+  padding-top: 20px;
+}
+.prodctAdv img {
+  width: 100%;
+}
+
+.quantity_inf {
+  color: gray;
+  margin: 0;
+  font-weight: 600;
+}
+
+.priceif {
+  margin: 0;
+  color: #54c963;
+  font-weight: 600;
+}
+
+.SellInfo {
+  width: 100%;
+  min-height: 70px;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+.SellInfo img {
+  width: 70px;
+  height: 70px;
+}
+.SellInfoName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 0.5px solid rgb(212, 212, 212);
+  padding: 10px;
+}
+.SellInfoName p {
+  margin: 0;
+}
+.SellAnother {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.SellAnother p {
+  margin: 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  font-weight: 600;
+}
+.SellAnother p span {
+  color: #54c963;
+}
+
+.CardPrdctDetail {
+  border-radius: 20px;
+}
+
+.list-inline-item p {
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 20px;
+  font-weight: 600;
+  padding: 3px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.list-inline-item p:hover {
+  transform: translateY(-5px);
+}
+
+.list-inline-item p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 150, 0.5),
+    rgba(0, 204, 255, 0.5)
+  );
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.list-inline-item p:hover::before,
+.list-inline-item p:active::before {
+  left: 0;
+}
+.TabsContent {
+  max-height: 900px;
+  overflow-y: scroll;
+}
+.TabsContentfix {
+}
+.TabsContent ul li {
+  list-style: none;
+  padding: 10px;
+}
+.specs-container {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.specs-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+}
+
+.specs-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.specs-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.specs-table td:first-child {
+  font-weight: bold;
+  text-align: left;
+  width: 50%;
+}
+
+.specs-table td:last-child {
+  text-align: right;
+  width: 50%;
+}
+.reviewCard .rounded-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+.rounded-circle img {
+  width: 100px;
+
+  max-width: 100px;
+  height: 100px;
+  max-height: 200px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.reviewCard .reviewcardIMG {
+  width: 100px;
+
+  max-width: 100px;
+}
+
+.infoReview h5 {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.reviewCard {
+  margin-top: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.WriteCmt {
+  margin-top: 30px;
+}
+
+.form-group textarea {
+  min-height: 200px;
+}
+
+.writeReview button {
+  background-color: #6d4117;
+  color: white;
+}
+.writeReview button:hover {
+  background-color: gray;
+}
+
+.progressBarBox {
+  padding-bottom: 10px;
+}
+
+.countdown-timer {
+  color: #ff5733;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.SuggestFa {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}

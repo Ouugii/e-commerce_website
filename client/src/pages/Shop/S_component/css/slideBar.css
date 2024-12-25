@@ -1,0 +1,49 @@
+.slideBar {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoS {
+  padding: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderBarItem {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0px 10px 3px;
+  padding: 15px 10px 15px 10px;
+  border-top-left-radius: 15px 15px;
+  border-bottom-left-radius: 15px 15px;
+  transition: ease-in-out 0.2s;
+}
+
+.sliderBarItem:hover,
+.sliderBarItem.active {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.BtnSlidebar {
+  font-size: 30px;
+  position: fixed;
+  left: 7%;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.BtnSlidebar:hover {
+  color: red;
+  transition: ease-in-out 0.2s;
+}

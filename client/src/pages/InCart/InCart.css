@@ -1,0 +1,71 @@
+.cartSection {
+  width: 100%;
+  height: auto;
+  padding: 35px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CartCtn {
+  max-width: 1700px;
+}
+.cartSection h1 {
+  font-size: 30px;
+}
+
+.cartWrapper .table thead tr {
+  background: #f1f1f1 !important;
+}
+.cartWrapper .table tbody td {
+  vertical-align: middle;
+}
+.emptyCart {
+  text-align: center;
+  color: #333;
+}
+
+.emptyCart h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.emptyCart p {
+  font-size: 16px;
+  color: #777;
+}
+
+.cartWrapper .table tbody td .imgCart {
+  max-width: 100px;
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.infoCart h4 {
+  padding-left: 10px;
+  font-size: 20px;
+}
+.totalPrice {
+  margin-left: auto;
+}
+
+.ShiptotalPrice {
+  margin-left: auto;
+  font-size: 15px;
+}
+.shippingAddress {
+  margin-left: auto;
+}
+.btnCart {
+  padding: 10px;
+  border: none;
+  background-color: #0ac232;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.btnCart:hover {
+  transform: translateY(-10px);
+}

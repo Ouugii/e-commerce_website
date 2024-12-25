@@ -1,0 +1,89 @@
+.listingPage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+.listing-ctn {
+  max-width: 1700px;
+  padding: 20px 0px;
+}
+
+.filterCard1 {
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.filterCard1 p {
+  font-weight: 600;
+  cursor: pointer;
+}
+.filterCard1 ul {
+  padding-left: none;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-left: 0;
+}
+.filterCard1 ul li {
+  list-style: none;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.filterCard1 ul li:hover {
+  background-color: rgb(230, 252, 255);
+  color: rgb(56, 227, 250);
+}
+.filterCard1 ul li img {
+  max-width: 25px;
+  object-fit: cover;
+}
+.cardUl {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.cardUl::-webkit-scrollbar {
+  display: none;
+}
+
+.productListRow .item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  justify-content: start;
+}
+
+.productThumb1 {
+  width: calc(100% / 4);
+  height: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 15px;
+  transition: ease-in-out 0.3s;
+}
+
+.productThumb1:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.styleIMGlisst {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

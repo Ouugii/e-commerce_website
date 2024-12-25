@@ -1,0 +1,23 @@
+### danh sách sản phẩm- xong
+GET http://localhost:3030/api/v1/p/products?keyword=ao
+
+### danh sách danh mục - xong 
+GET http://localhost:3030/api/v1/p/categories
+
+### danh sách thương hiệu- xong
+GET http://localhost:3030/api/v1/p/brands
+
+### xem shop - xong
+GET http://localhost:3030/api/v1/p/shop/1
+
+### danh sách sản phẩm theo thương hiệu
+GET http://localhost:3030/api/v1/p/brands/1/products
+
+### gợi ý sản phẩm
+GET http://localhost:3030/api/v1/p/featured-products
+
+### danh sách sản phẩm theo danh mục
+GET http://localhost:3030/api/v1/p/categories/:categoryId/products?{}
+
+### chi tiết sản phẩm
+GET http://localhost:3030/api/v1/p/products/2

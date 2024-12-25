@@ -1,0 +1,63 @@
+.saleWrapper {
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saleCtn {
+  max-width: 1700px;
+}
+
+.saleCtnH {
+  background: linear-gradient(
+    45deg,
+    #ff0066,
+    #ffcc00,
+    #66ff66,
+    #3399ff,
+    #cc66ff
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  animation: gradient 5s ease infinite;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.saleCtnIm {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  padding-top: 20px;
+}
+.saleCtnIm img {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

@@ -1,0 +1,169 @@
+header {
+  width: 100%;
+
+  box-sizing: border-box;
+  height: auto;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+header .headerSearch {
+  width: 100%;
+  height: 40px;
+  background-color: #f0f5ff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+header .headerSearch .selectDrop {
+  width: 25%;
+  position: relative;
+}
+
+header .headerSearch .selectDrop:after {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: rgba(5, 5, 5, 0.2);
+  position: absolute;
+  top: -8%;
+  right: 0px;
+}
+header .headerSearch .search {
+  width: 75%;
+  position: relative;
+}
+
+header .headerSearch .search input {
+  padding: 0px 15px;
+  width: 100%;
+  height: 35px;
+  border: 0px;
+  outline: none;
+  background-color: #f0f5ff;
+}
+
+header .headerSearch .search .searchIcon {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  opacity: 0.5;
+}
+
+.loginNav {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 40px;
+  height: 40px;
+  flex: "1 1 auto";
+  text-align: center;
+}
+.btnNav1 {
+  position: relative;
+}
+.btnNav3 {
+  position: relative;
+}
+.navButtonn {
+  border-radius: 5px;
+  padding: 9px 30px;
+  width: max-content;
+  transition: ease-in-out 0.3s;
+  display: flex;
+  border: 2px solid white;
+}
+
+.navButtonn:hover {
+  color: white;
+  background-color: #2a55e5;
+  cursor: pointer;
+  border: 2px solid rgb(241, 177, 39);
+}
+
+.dropdownMenu {
+  position: absolute;
+  padding: 20px;
+  top: 120%;
+  left: 3%;
+  width: max-content;
+  height: auto;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.dropdownMenu1 {
+  position: absolute;
+  padding: 20px;
+  top: 120%;
+  left: 3%;
+  width: max-content;
+  height: auto;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.dropdownMenu li {
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f3f3f3;
+  color: rgb(42, 139, 230);
+  border-radius: 2px;
+}
+
+.Shop-regis-Drop {
+  max-width: 200px;
+}
+
+.Shop-regis-Drop h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.Shop-regis-Drop h2 {
+  font-size: 10px;
+  font-weight: 500;
+  color: #8a8a8a;
+}
+.Shop-regis-Drop button {
+  padding: 5px 20px;
+  background-color: #ebb624;
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+  border: none;
+}
+
+.Shop-regis-Drop button:hover {
+  transform: translateY(-5px);
+}
+.logos {
+  display: flex;
+  justify-content: center;
+}
+.logoHeader {
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: ease-in-out 0.3s;
+}
+.logoHeader:hover {
+  background-color: #ececec;
+}

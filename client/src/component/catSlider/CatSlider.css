@@ -1,0 +1,129 @@
+.catSliderSection {
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catSliderSectionCtn {
+  max-width: 1700px;
+}
+
+.cat_slider_Main .item {
+  width: 100%;
+  min-width: 150px;
+  height: auto;
+  border: 2px solid rgb(231, 231, 231);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 2px;
+  transition: ease-in-out 0.3s;
+  min-height: 250px;
+  z-index: 100;
+}
+
+.cat_slider_Main .item:hover {
+  transform: translateY(-5px);
+  border: none;
+  background-color: #e4fafd;
+  color: #007bff;
+}
+.cat_slider_Main {
+  position: relative;
+}
+
+.cat_slider_Main .slick-slide {
+  padding-right: 10px !important;
+  width: max-content;
+  padding-top: 10px;
+}
+
+.cat_slider_Main .item .info {
+  margin: 0;
+  max-width: 200px;
+}
+
+.cat_slider_Main .item .info img {
+  width: 100%;
+  height: auto;
+}
+
+.cat_slider_Main .item .info h5 {
+  padding-top: 30px;
+  font-size: 15px;
+}
+.slick-arrow {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+}
+
+.cat_slider_Main .slick-arrow.slick-prev {
+  left: 1.2% !important;
+  background-color: #007bff;
+  border-radius: 60%;
+  z-index: 1;
+}
+
+.cat_slider_Main .slick-arrow.slick-next {
+  right: 1.5% !important;
+  background-color: #007bff;
+  border-radius: 60%;
+  z-index: 1;
+}
+.catFood_Container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding-top: 15px;
+}
+.catSliderSectionCtn .catFood {
+  position: relative;
+  padding: 20px;
+  min-height: 300px;
+  border-radius: 10px;
+  width: 100%;
+}
+.catSliderSectionCtn .catFood .catF_Content {
+  width: 250px;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+.catSliderSectionCtn .catFood .catF_Content h1 {
+  font-size: 25px;
+  color: #757575;
+  letter-spacing: 0.5px;
+  padding-bottom: 20px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.catSliderSectionCtn .catFood .catF_Content h1:hover {
+  transform: translateY(-5px);
+}
+
+.catSliderSectionCtn .catFood .catF_Content p {
+  background-color: rgb(13, 185, 13);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.catSliderSectionCtn .catFood .catF_Content p:hover {
+  transform: translateY(-5px);
+}
+.catSliderSectionCtn .catFood .catF_img img {
+  max-width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  max-height: 350px;
+}

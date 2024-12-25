@@ -1,0 +1,41 @@
+### register shop
+POST http://localhost:3030/api/v1/shop/register
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTUzMTQxMSwiZXhwIjoxNzI2Mzk1NDExfQ.zl6vBG4Xtu7TtWEXZyZ2xTz3o1Rz1vVUDu26xsWH5Qc
+
+{
+    "name": "shop test 9"
+}
+
+### get shop info for owner
+GET http://localhost:3030/api/v1/shop/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTk0MTQ3MiwiZXhwIjoxNzI2ODA1NDcyfQ.jaYOfQ2ZVXu6BmBCaDAKHAd6wAGgxsq6IF50d0IiBjU
+
+### add product shop info for owner
+POST http://localhost:3030/api/v1/shop/products
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTY5NDEyNywiZXhwIjoxNzI2NTU4MTI3fQ.pOKnHrJGkwj3WJqlYZuHKN5M-0vRNojFnF53hf6JLOg
+
+{
+    "name": "Áo len nữ cổ tròn - xanh dương",
+    "description": "Áo len nữ cổ tròn - xanh dương - Ấm áp mùa đông - Day la san pham 7 của shop 9",
+    "price": 150000,
+    "sale_price": 120000,
+    "stock_quantity": 100,
+    "brand_id": null,
+    "category_ids": [2, 10]
+} 
+
+### comfirm 
+POST http://localhost:3030/api/v1/shop/order/:orderId/confirm
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTY5NDEyNywiZXhwIjoxNzI2NTU4MTI3fQ.pOKnHrJGkwj3WJqlYZuHKN5M-0vRNojFnF53hf6JLOg
+### deliver
+POST http://localhost:3030/api/v1/shop/order/:orderId/ship
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTY5NDEyNywiZXhwIjoxNzI2NTU4MTI3fQ.pOKnHrJGkwj3WJqlYZuHKN5M-0vRNojFnF53hf6JLOg
+### deliver
+POST http://localhost:3030/api/v1/shop/order/:orderId/deliver
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTY5NDEyNywiZXhwIjoxNzI2NTU4MTI3fQ.pOKnHrJGkwj3WJqlYZuHKN5M-0vRNojFnF53hf6JLOg

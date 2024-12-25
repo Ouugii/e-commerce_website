@@ -1,0 +1,176 @@
+### Access 
+### Sign Up
+POST http://localhost:3030/api/v1/access/sign-up
+Content-Type: application/json
+
+{
+    "email": "test9@gmail.com",
+    "password": "123"
+}
+
+### Login
+POST http://localhost:3030/api/v1/access/login
+Content-Type: application/json
+
+{
+    "option": "test10@gmail.com",
+    "password": "123"
+}
+
+### Logout
+DELETE  http://localhost:3030/api/v1/access/logout
+Content-Type: application/json
+
+### Shop
+
+### Register Booth
+POST  http://localhost:3030/api/v1/access/logout
+Content-Type: application/json
+
+# {
+#     "userId": 2
+#     "province_code": "test@gmail.com",
+# }
+
+
+### Location 
+GET http://localhost:3030/api/v1/address
+### Province 
+GET http://localhost:3030/api/v1/address/procince
+
+### District 
+GET http://localhost:3030/api/v1/address/district/68
+
+### Ward 
+GET http://localhost:3030/api/v1/address/ward/672
+
+### Search
+GET http://localhost:3030/api/v1/address/search/?place=Đà Lạt
+
+### User
+GET http://localhost:3030/api/v1/customer
+
+### Get my info 
+GET http://localhost:3030/api/v1/customer/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjIsImlhdCI6MTcyNTc4MDM3NiwiZXhwIjoxNzI2NjQ0Mzc2fQ.8QYbGe6Y0dw9Ttzqd2x5rKZKamFcfZkbIlQPqt2c88U
+
+### update info
+PUT http://localhost:3030/api/v1/customer/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTUzMTQxMSwiZXhwIjoxNzI2Mzk1NDExfQ.zl6vBG4Xtu7TtWEXZyZ2xTz3o1Rz1vVUDu26xsWH5Qc
+
+{
+    "phone_number": "12323453456",
+    "last_name": "Nguyen",
+    "first_name": "Thanh"
+}
+
+### add shipping address
+POST http://localhost:3030/api/v1/customer/shipping-address
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjIsImlhdCI6MTcyNTc4MDM3NiwiZXhwIjoxNzI2NjQ0Mzc2fQ.8QYbGe6Y0dw9Ttzqd2x5rKZKamFcfZkbIlQPqt2c88U
+
+{
+    "ward_code": "24796",
+    "province": "Tỉnh Lâm Đồng",
+    "district": "Thành phố Đà Lạt",
+    "ward": "Phường 10",
+    "address": "999 Trần Hưng Đạo",
+    "phone_number": "012323423498765"
+}
+
+### get all customer shipping address
+GET http://localhost:3030/api/v1/customer/shipping-addresses
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjIsImlhdCI6MTcyNTc4MDM3NiwiZXhwIjoxNzI2NjQ0Mzc2fQ.8QYbGe6Y0dw9Ttzqd2x5rKZKamFcfZkbIlQPqt2c88U
+
+### update shipping address
+PUT http://localhost:3030/api/v1/customer/shipping-address/:shippingAddressId
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTUzMTQxMSwiZXhwIjoxNzI2Mzk1NDExfQ.zl6vBG4Xtu7TtWEXZyZ2xTz3o1Rz1vVUDu26xsWH5Qc
+
+{
+    "ward_code": "24796",
+    "province": "Tỉnh Lâm Đồng",
+    "district": "Thành phố Đà Lạt",
+    "ward": "Phường 10",
+    "address": "999 Trần Hưng Đạo",
+    "phone_number": "012323423498765"
+}
+
+### SHOP
+GET http://localhost:3030/api/v1/shop
+
+### register shop
+POST http://localhost:3030/api/v1/shop/register
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTUzMTQxMSwiZXhwIjoxNzI2Mzk1NDExfQ.zl6vBG4Xtu7TtWEXZyZ2xTz3o1Rz1vVUDu26xsWH5Qc
+
+{
+    "name": "shop test 9"
+}
+
+### get shop info for owner
+GET http://localhost:3030/api/v1/shop/profile
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTk0MTQ3MiwiZXhwIjoxNzI2ODA1NDcyfQ.jaYOfQ2ZVXu6BmBCaDAKHAd6wAGgxsq6IF50d0IiBjU
+
+### add product shop info for owner
+POST http://localhost:3030/api/v1/shop/products
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTcyNTY5NDEyNywiZXhwIjoxNzI2NTU4MTI3fQ.pOKnHrJGkwj3WJqlYZuHKN5M-0vRNojFnF53hf6JLOg
+
+{
+    "name": "Áo len nữ cổ tròn - xanh dương",
+    "description": "Áo len nữ cổ tròn - xanh dương - Ấm áp mùa đông - Day la san pham 7 của shop 9",
+    "price": 150000,
+    "sale_price": 120000,
+    "stock_quantity": 100,
+    "brand_id": null,
+    "category_ids": [2, 10]
+} 
+
+# "category_ids": [1, 2, 3], "brand_id": 10
+
+### PUCLIC API
+GET http://localhost:3030/api/v1/p
+
+### danh sách sản phẩm
+GET http://localhost:3030/api/v1/p/products?{}
+
+### chi tiết sản phẩm
+GET http://localhost:3030/api/v1/p/products/:productId
+
+### danh sách danh mục
+GET http://localhost:3030/api/v1/p/categories
+
+### danh sách sản phẩm theo danh mục
+GET http://localhost:3030/api/v1/p/categories/:categoryId/products?{}
+
+### danh sách thương hiệu
+GET http://localhost:3030/api/v1/p/brands
+
+### danh sách sản phẩm theo thương hiệu
+GET http://localhost:3030/api/v1/p/brands/:brandsId/products?{}
+
+### gợi ý sản phẩm
+GET http://localhost:3030/api/v1/p/featured-products
+
+### xem shop
+GET http://localhost:3030/api/v1/p/shop/:shopId
+
+### update image -- POST MAN
+
+# PUT http://localhost:3030/api/v1/shop/profile-image -----
+# Content-Type: multipart/form-data
+# authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjE3LCJpYXQiOjE3MjUzMzM1ODYsImV4cCI6MTcyNjE5NzU4Nn0.MT29SyEW9k4BPrwJRipYNy8PjHTuHVpetuhrBsfJIdU
+
+# POST http://localhost:3030/api/v1/shop/product-images/:productId
+# Content-Type: application/json
+# authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjE4LCJpYXQiOjE3MjUzNjkyMTAsImV4cCI6MTcyNjIzMzIxMH0.j0pIQ_-VM1vUHYfEXwQCOMijzFjLAvZYR2oCdy7W0-0
+
+# PUT http://localhost:3030/api/v1/customer/update-image
+# Content-Type: multipart/form-data
+# authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjE3LCJpYXQiOjE3MjUzMzM1ODYsImV4cCI6MTcyNjE5NzU4Nn0.MT29SyEW9k4BPrwJRipYNy8PjHTuHVpetuhrBsfJIdU
+

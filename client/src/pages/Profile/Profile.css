@@ -1,0 +1,157 @@
+.Profile_section {
+  width: 100%;
+  height: auto;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ProfileSectionCtn {
+  max-width: 1024px;
+}
+
+.User_info {
+  min-height: max-content;
+  background-color: rgb(218, 218, 218);
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.User_img img {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 50px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.User_inf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.User_inf h4 {
+  font-size: 15px;
+}
+.User_inf p {
+  min-height: 45px;
+  min-width: 500px;
+  max-width: 500px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: inline-block;
+  background-color: white;
+  padding: 5px 190px;
+}
+
+.user_update {
+  margin-top: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.user_update button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(218, 218, 218);
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+
+.user_update button:hover {
+  background-color: rgb(28, 88, 112);
+  color: white;
+}
+
+.User_address {
+  width: 100%;
+  background-color: rgb(218, 218, 218);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Address_ctn {
+  overflow-y: scroll;
+  max-height: 300px;
+  min-height: 300px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.Address_ctn::-webkit-scrollbar {
+  display: none;
+}
+
+.Address_ctn p {
+  margin: 20px;
+  border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.Featured-popUp {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FeaturedWrapper {
+  width: 900px;
+  border-radius: 10px;
+  height: 500px;
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.FeaturedWrapper1 {
+  width: 500px;
+  border-radius: 10px;
+  height: 400px;
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.Address_Wrapper {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Address_Wrapper form {
+  width: 400px;
+}
+.Address_L {
+  border: 0.5px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.Address_L img {
+  max-width: 400px;
+}
+
+.imput-box select {
+  margin-bottom: 10px;
+}

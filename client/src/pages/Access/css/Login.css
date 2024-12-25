@@ -1,0 +1,88 @@
+.bgr {
+  height: 700px;
+  background-color: rgb(247, 247, 247);
+}
+
+.Login_Ctn {
+  padding-top: 90px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login_ctnn {
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Form-BackGrn {
+  width: 400px;
+  background: linear-gradient(to right, #38658e, #4778a1);
+  background-color: #38658e;
+  height: 100%;
+  border-radius: 10px;
+  padding: 30px;
+  color: white;
+  position: relative;
+}
+
+.Form-BackGrn h1 {
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.Form-BackGrn p {
+  margin: 0;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.Form-BackGrn img {
+  max-width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.Form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.Form-login input {
+  padding: 5px 20px;
+  width: 300px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.Form-login button {
+  margin-top: 10px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #38658e;
+  color: white;
+  font-size: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.Form-login button:hover {
+  transform: translateY(-5px);
+}

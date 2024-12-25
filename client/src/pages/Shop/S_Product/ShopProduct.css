@@ -1,0 +1,275 @@
+.Product_Header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.Product_Header button {
+  padding: 0 20px;
+  border: none;
+  background-color: #a1a1a1;
+  font-weight: 600;
+  color: white;
+}
+.Product_Header h1 {
+  font-size: 20px;
+}
+
+.ShopProduct_content {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px;
+  max-height: 700px;
+}
+
+.SC_left {
+  padding-top: 20px;
+  width: 100vh;
+  max-width: 900px;
+  height: 850px;
+  max-height: 850px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+}
+
+.SC_left::-webkit-scrollbar {
+  display: none;
+}
+.SC_right {
+  width: 100vh;
+  max-width: 500px;
+  height: 850px;
+  max-height: 850px;
+  background-color: white;
+}
+
+.SC_item {
+  width: 800px;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.SC_item img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.SC_descipt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 700px;
+}
+
+.SC_descipt h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.SC_descipt p {
+  font-size: 12px;
+  margin: 0;
+  color: rgb(170, 170, 170);
+}
+
+.SC_item button {
+  border: none;
+  position: absolute;
+  bottom: 35px;
+  right: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #b0d0ff;
+  color: white;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+}
+
+.SC_item button:hover {
+  background-color: #77acfc;
+  transform: translateY(-5px);
+}
+
+.CreateProoduct {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.301);
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.CreateProduct-Content {
+  width: 40%;
+  background-color: white;
+  color: black;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 90%;
+}
+.CreateProduct-Content1 {
+  width: 50%;
+  background-color: white;
+  color: black;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+
+.CreateProduct-Content1 p {
+  font-weight: 600;
+}
+
+.ProDuct_ifChange p {
+  font-weight: 400;
+}
+.CreateProduct-Content form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cateList {
+  height: 500px;
+  max-height: 600px;
+  overflow-y: scroll;
+  border: 0.5px solid rgb(231, 231, 231);
+  border-radius: 5px;
+}
+
+.cateList li {
+  text-decoration: none;
+  list-style: none;
+}
+.cateList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Clone */
+.Dashboard-Container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.Dashboard-content-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  gap: 30px;
+}
+.db-List {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+.bd-main {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.Dashboard-content-right {
+  width: 30%;
+
+  margin-left: 30px;
+  margin-right: 10px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.Db-title h1 {
+  font-size: 20px;
+}
+
+.dashBoard-list {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.Db-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 800px;
+  max-height: 1000px;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+.Db-visitor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+  border-radius: 10px;
+}
+.dashBoard-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+}
+.Dli-u {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.Visitor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Visitor-n {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 20px;
+}
+.Visitor-Name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.Upcoming-date {
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+.userImgsss {
+  width: 50px;
+  border-radius: 50%;
+}
